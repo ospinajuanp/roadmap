@@ -1,0 +1,75 @@
+.contentData{
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    width: 100%;    
+}
+.contentData-project,.contentData-work,.contentData-education{
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+    border: 1px solid var(--color-primary);    
+    overflow: auto;
+}
+.contentData-project_title,.contentData-work_title,.contentData-education_title{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.contentData-project_name{
+    padding: 0.5rem 0 0.5rem 0;
+}
+.contentData-project_name{
+    cursor: pointer;
+    transition: background-color 0.3s linear;
+}
+.contentData-project_name:hover{
+    background-color: var(--color-tertiary);
+    transition: background-color 0.3s linear;
+
+}
+.contentData-project_name + a{
+    border-top: 1px solid var(--color-primary);
+}
+
+.contentData-project_text,.contentData-work_text,.contentData-education_text{
+    padding: 1rem;
+    font-size: 1rem;
+}
+.linea{
+    display: block;
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px solid var(--color-primary);
+    margin-bottom: 2rem;
+}
+.contentData-work_text h3,.contentData-courses_title{
+    color: var(--color-tertiary);
+}
+.contentData-work_text div:nth-of-type(1){
+    opacity: 0.6;
+}
+.contentData-work{
+    height: 100%;
+}
+.contentData-courses{
+    width: auto; /* Ancho fijo */
+    max-height: 500px; /* Altura máxima antes de cortar */
+    overflow: hidden;
+    position: relative;
+    display: block;
+}
+.contentData-courses {
+    width: 100%; /* Ajusta según el diseño */
+    max-height: 200px; /* Altura máxima antes de ocultar el texto */
+    overflow: hidden;
+    position: relative;
+    transition: max-height 0.3s ease-in-out;
+}
+
+.ver-mas {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: var(--color-tertiary);
+    font-weight: bold;
+    cursor: pointer;
+}
